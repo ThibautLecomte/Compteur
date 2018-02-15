@@ -7,7 +7,7 @@
     tools:context="com.example.cdsm.compteur.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button"
@@ -15,6 +15,39 @@
         android:layout_marginTop="32dp"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toRightOf="@id/text0"
+        app:layout_constraintRight_toLeftOf="@id/text2"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        app:layout_constraintRight_toLeftOf="@id/text3"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toRightOf="@id/text2"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +59,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="158dp"
         android:id="@+id/button"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,11 +67,22 @@
 
     <ImageView
         android:id="@+id/image"
+        android:src="@drawable/eteinte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
